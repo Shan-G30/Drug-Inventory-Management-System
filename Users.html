@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="users.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="menu-icon">☰ MENU</div>
+            <div class="user-info">User: Trial Admin (ADMINISTRATOR)</div>
+            <button><a href="home.html" class="sign-out">Sign out</a></button>
+        </header>
+
+        <aside>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/Product.html">Products</a></li>
+                <li><a href="/http:/127.0.0.1:5500/Stock.html">Current Stock</a></li>
+                <li><a href="http://127.0.0.1:5500/Customers.html">Customers</a></li>
+                <li><a href="http://127.0.0.1:5500/Suppliers.html">Suppliers</a></li>
+                <li><a href="http://127.0.0.1:5500/Sales.html">Sales</a></li>
+                <li><a href="http://127.0.0.1:5500/Purchase.html">Purchase</a></li>
+                <li class="active"><a href="http://127.0.0.1:5500/Users.html">Users</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="users-section">
+                <h1>USERS</h1>
+                <div class="content-container">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>NAME</th>
+                                    <th>LOCATION</th>
+                                    <th>PHONE</th>
+                                    <th>USERNAME</th>
+                                    <th>PASSWORD</th>
+                                    <th>USERTYPE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Puja</td>
+                                    <td>kerala</td>
+                                    <td>965078671</td>
+                                    <td>puja123</td>
+                                    <td>dbadpass</td>
+                                    <td>ADMINISTRATOR</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>prabha</td>
+                                    <td>Delhi</td>
+                                    <td>9605685432</td>
+                                    <td>prabha346</td>
+                                    <td>dstdpass</td>
+                                    <td>EMPLOYEE</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>priya</td>
+                                    <td>Tamilnadu</td>
+                                    <td>9876543210</td>
+                                    <td>priyaaa90</td>
+                                    <td>root</td>
+                                    <td>ADMINISTRATOR</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>shanmathi</td>
+                                    <td>andhra pradesh</td>
+                                    <td>1122334455</td>
+                                    <td>shan64</td>
+                                    <td>emp1</td>
+                                    <td>EMPLOYEE</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="user-details">
+                        <h2>Enter User Details</h2>
+                        <form id="userForm">
+                            <label>Full Name:</label>
+                            <input type="text" id="fullName" value="Trial Admin" />
+                            <label>Location:</label>
+                            <input type="text" id="location" value="Local" />
+                            <label>Contact:</label>
+                            <input type="text" id="contact" value="9876543210" />
+                            <label>Username:</label>
+                            <input type="text" id="username" value="root" />
+                            <label>Password:</label>
+                            <input type="password" id="password" value="root" />
+                            <label>Usertype:</label>
+                            <select id="usertype">
+                                <option value="ADMINISTRATOR" selected>ADMINISTRATOR</option>
+                                <option value="EMPLOYEE">EMPLOYEE</option>
+                            </select>
+                            <div class="form-buttons">
+                                <button type="button" id="addBtn">Add</button>
+                                <button type="button" id="deleteBtn">Delete</button>
+                                <button type="reset" id="clearBtn">Clear</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="users.js"></script>
+</body>
+</html>

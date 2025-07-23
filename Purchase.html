@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Screen</title>
+    <link rel="stylesheet" href="Purchase.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/Product.html">Products</a></li>
+                <li><a href="http://127.0.0.1:5500/Stock.html">Current Stock</a></li>
+                <li><a href="http://127.0.0.1:5500/Customers.html">Customers</a></li>
+                <li><a href="http://127.0.0.1:5500/Suppliers.html">Suppliers</a></li>
+                <li><a href="http://127.0.0.1:5500/Sales.html">Sales</a></li>
+                <li class="active"><a href="http://127.0.0.1:5500/Purchase.html">Purchase</a></li>
+                <li><a href="http://127.0.0.1:5500/Users.html">Users</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="purchase-list">
+                <h2>PURCHASE</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Purchase ID</th>
+                            <th>Product Code</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Total Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1001</td>
+                            <td>prod10</td>
+                            <td>Deriphyllin</td>
+                            <td>100</td>
+                            <td>3,800</td>
+                        </tr>
+                        <tr>
+                            <td>1002</td>
+                            <td>prod6</td>
+                            <td>Zintac</td>
+                            <td>200</td>
+                            <td>9,000</td>
+                        </tr>
+                        <tr>
+                            <td>1003</td>
+                            <td>prod7</td>
+                            <td>Pantapraz</td>
+                            <td>150</td>
+                            <td>5,700</td>
+                        </tr>
+                        <tr>
+                            <td>1004</td>
+                            <td>prod3</td>
+                            <td>Riset-M</td>
+                            <td>250</td>
+                            <td>7,500</td>
+                        </tr>
+                        <tr>
+                            <td>1005</td>
+                            <td>prod2</td>
+                            <td>Pavmol-650</td>
+                            <td>150</td>
+                            <td>3,750</td>
+                        </tr>
+                        <tr>
+                            <td>1006</td>
+                            <td>prod4</td>
+                            <td>Lopramide</td>
+                            <td>300</td>
+                            <td>7,044</td>
+                        </tr>
+                        <tr>
+                            <td>1007</td>
+                            <td>prod9</td>
+                            <td>Ora-fast</td>
+                            <td>100</td>
+                            <td>7,200</td>
+                        </tr>
+                        <tr>
+                            <td>1008</td>
+                            <td>prod5</td>
+                            <td>Betnovet-N</td>
+                            <td>150</td>
+                            <td>12,750</td>
+                        </tr>
+                        <tr>
+                            <td>1009</td>
+                            <td>prod8</td>
+                            <td>Pantaprazole</td>
+                            <td>250</td>
+                            <td>5,700</td>
+                        </tr>
+                        <tr>
+                            <td>1010</td>
+                            <td>prod1</td>
+                            <td>Flucol-650</td>
+                            <td>350</td>
+                            <td>15,750</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Purchase Form -->
+            <div class="purchase-form">
+                <h3>Purchase Product</h3>
+                <form id="purchaseForm">
+                    <label for="supplier">Supplier:</label>
+                    <select id="supplier">
+                        <option value="Acmey">Acmey inc. </option>
+                        <option value="Bio">Biolabs</option>
+                        <option value="Pharamafab">PharmaFabricon</option>
+                        <option value="Pharamafren">Pharma French</option>
+                        <option value="Pm Pharma">PM Pharma</option>
+                        <option value="Orchid">Orchid Healthcare</option>
+                        <option value="Quantic">Quantic Bio Pharmaceuticals</option>
+                        <option value="Shrimpex">Shrimpex Biotech services</option>
+                        <option value="Softgel">Softgel Healthcare Private Ltd</option>
+                        <option value="Spycaa">SPYCAA Pharmaceutical Industries</option>
+                        <option value="Tychos">Tychos Therapeutics</option>
+                        <option value="Zenomed">Zenomed Health Care Pvt. Ltd</option>
+                        <option value="Zeta">Zeta Formulation Pvt.Ltd</option>
+                        <option value="Triton">Triton Healthcare Pvt.ltd</option>
+                    </select>
+
+                    <label for="productCode">Product Code:</label>
+                    <input type="text" id="productCode" value="prod7">
+
+                    <label for="productName">Product Name:</label>
+                    <input type="text" id="productName" value="Betnovet-N">
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date">
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" value="150">
+
+                    <label for="costPrice">Cost Price:</label>
+                    <input type="text" id="costPrice" value="12750">
+
+                    <label for="sellingPrice">Selling Price:</label>
+                    <input type="text" id="sellingPrice" value="14250">
+
+                    <label for="company">Company:</label>
+                    <input type="text" id="company" value="Acmey inc">
+
+                    <div class="buttons">
+                        <button type="button" onclick="purchaseProduct()">Purchase</button>
+                        <button type="button" onclick="deleteProduct()">Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="Purchase.js"></script>
+</body>
+</html>

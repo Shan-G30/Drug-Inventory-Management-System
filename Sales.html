@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Dashboard</title>
+    <link rel="stylesheet" href="Sales.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="menu">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/Product.html">Products</a></li>
+                <li><a href="http://127.0.0.1:5500/Stock.html">Current Stock</a></li>
+                <li><a href="http://127.0.0.1:5500/Customers.html">Customers</a></li>
+                <li><a href="http://127.0.0.1:5500/Suppliers.html">Suppliers</a></li>
+                <li><a href="http://127.0.0.1:5500/Sales.html" class="active">Sales</a></li>
+                <li><a href="http://127.0.0.1:5500/Purchase.html">Purchase</a></li>
+                <li><a href="http://127.0.0.1:5500/Users.html">Users</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="main-content">
+            <h2>SALES</h2>
+            <div class="sales-section">
+                <div class="sales-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SALESID</th>
+                                <th>PRODUCTCODE</th>
+                                <th>PRODUCTNAME</th>
+                                <th>QUANTITY</th>
+                                <th>REVENUE</th>
+                                <th>NAME</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2001</td>
+                                <td>prod10</td>
+                                <td>Deriphyllin</td>
+                                <td>3</td>
+                                <td>Rs.135</td>
+                                <td>Balaji</td>
+                            </tr>
+                            <tr>
+                                <td>2002</td>
+                                <td>prod9</td>
+                                <td>Ora-fast</td>
+                                <td>1</td>
+                                <td>Rs.90</td>
+                                <td>Balaji</td>
+                            </tr>
+                            <tr>
+                                <td>2003</td>
+                                <td>prod3</td>
+                                <td>Riset-M</td>
+                                <td>2</td>
+                                <td>Rs.74</td>
+                                <td>Balaji</td>
+                            </tr>
+                            <tr>
+                                <td>2004</td>
+                                <td>prod6</td>
+                                <td>Zintac</td>
+                                <td>2</td>
+                                <td>Rs.90</td>
+                                <td>Javith</td>
+                            </tr>
+                            <tr>
+                                <td>2005</td>
+                                <td>prod3</td>
+                                <td>Riset-M</td>
+                                <td>2</td>
+                                <td>Rs.74</td>
+                                <td>Javith</td>
+                            </tr>
+                            <tr>
+                                <td>2006</td>
+                                <td>prod2</td>
+                                <td>Pavmol-650</td>
+                                <td>2</td>
+                                <td>Rs.64</td>
+                                <td>Javith</td>
+                            </tr>
+                            <tr>
+                                <td>2007</td>
+                                <td>prod8</td>
+                                <td>Pavntaprazole</td>
+                                <td>2</td>
+                                <td>Rs.106</td>
+                                <td>Javith</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>2008</td>
+                                <td>prod2</td>
+                                <td>Pavmol-650</td>
+                                <td>1</td>
+                                <td>Rs.32</td>
+                                <td>Sasi kumar</td>
+                            </tr>
+                            <tr>
+                                <td>2009</td>
+                                <td>prod8</td>
+                                <td>Pantaprazole</td>
+                                <td>3</td>
+                                <td>Rs.144</td>
+                                <td>Sasi Kumar</td>
+                            </tr>
+                            <tr>
+                                <td>2010</td>
+                                <td>prod5</td>
+                                <td>Betnovet-N</td>
+                                <td>1</td>
+                                <td>Rs.95</td>
+                                <td>Sasi Kumar</td>
+                            </tr>
+                            <tr>
+                                <td>2011</td>
+                                <td>prod6</td>
+                                <td>Zintac</td>
+                                <td>2</td>
+                                <td>Rs.100</td>
+                                <td>Sasi Kumar</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>2012</td>
+                                <td>prod4</td>
+                                <td>Loperamide</td>
+                                <td>4</td>
+                                <td>Rs.120</td>
+                                <td>Suresh</td>
+                            </tr>
+                            <tr>
+                                <td>2013</td>
+                                <td>prod9</td>
+                                <td>Ora-fast</td>
+                                <td>1</td>
+                                <td>Rs.90</td>
+                                <td>Suresh</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="sell-form">
+                    <h3>Sell Product</h3>
+
+                    <label for="customer-code">Customer Code:</label>
+                    <input type="text" id="customer-code" value="1" readonly>
+
+                    <label for="customer-name">Name:</label>
+                    <input type="text" id="customer-name" value="Balaji Jayagan | Location: Namakkal" readonly>
+
+                    <button type="button">Click to add a New Customer</button>
+
+                    <label for="product-code">Product Code:</label>
+                    <input type="text" id="product-code" value="prod10" readonly>
+
+                    <label for="product-name">Product Name:</label>
+                    <input type="text" id="product-name" value="Deriphyllin | Available quantity: 172" readonly>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date">
+
+                    <label for="selling-price">Selling Price:</label>
+                    <input type="text" id="selling-price" value="Rs.45">
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity">
+
+                    <button type="submit">SELL PRODUCT</button>
+                    <button type="button">Delete</button>
+                    <button type="button">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
