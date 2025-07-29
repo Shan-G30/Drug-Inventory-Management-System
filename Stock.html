@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Stock</title>
+    <link rel="stylesheet" href="stock.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li class="menu-item"><i class="menu-icon"></i> MENU</li>
+            <li><a href="http://127.0.0.1:5500/Product.html">Products</a></li>
+            <li><a href="http://127.0.0.1:5500/Stock.html" class="active">Current Stock</a></li>
+            <li><a href="http://127.0.0.1:5500/Customers.html">Customers</a></li>
+            <li><a href="http://127.0.0.1:5500/Suppliers.html">Suppliers</a></li>
+            <li><a href="http://127.0.0.1:5500/Sales.html">Sales</a></li>
+            <li><a href="http://127.0.0.1:5500/Purchase.html">Purchase</a></li>
+            <li><a href="http://127.0.0.1:5500/Users.html">Users</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <h2>CURRENT STOCK</h2>
+            <div class="user-info">
+                <span>User: Trial Admin (ADMINISTRATOR)</span>
+                <button class="signout">Sign out</button>
+            </div>
+        </div>
+
+        <div class="stock-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>PRODUCTCODE</th>
+                        <th>PRODUCTNAME</th>
+                        <th>QUANTITY</th>
+                        <th>COSTPRICE</th>
+                        <th>SELLPRICE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>prod1</td>
+                        <td>Flucol-650</td>
+                        <td>30</td>
+                        <td>Rs.45</td>
+                        <td>RS.60</td>
+                    </tr>
+                    <tr>
+                        <td>prod2</td>
+                        <td>Pavmol-650</td>
+                        <td>25</td>
+                        <td>Rs.25</td>
+                        <td>Rs.32</td>
+                    </tr>
+                    <tr>
+                        <td>prod3</td>
+                        <td>Riset-M</td>
+                        <td>15</td>
+                        <td>Rs.30</td>
+                        <td>Rs.37</td>
+                    </tr>
+                    <tr>
+                        <td>prod4</td>
+                        <td>Lopramide</td>
+                        <td>10</td>
+                        <td>Rs.23</td>
+                        <td>Rs.30</td>
+                    </tr>
+                    <tr>
+                        <td>prod5</td>
+                        <td>Betnovet-N</td>
+                        <td>20</td>
+                        <td>Rs.85</td>
+                        <td>Rs.95</td>
+                    </tr>
+                    <tr>
+                        <td>prod6</td>
+                        <td>Zintac</td>
+                        <td>30</td>
+                        <td>Rs.45</td>
+                        <td>Rs.50</td>
+                    </tr>
+                    <tr>
+                        <td>prod7</td>
+                        <td>Pantapraz</td>
+                        <td>25</td>
+                        <td>Rs.38</td>
+                        <td>Rs.45</td>
+                    </tr>
+                    <tr>
+                        <td>prod8</td>
+                        <td>Pantaprazole</td>
+                        <td>20</td>
+                        <td>Rs.42</td>
+                        <td>Rs.48</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="refresh-button">REFRESH</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

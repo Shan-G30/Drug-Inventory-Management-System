@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/pills.avif');
+    background-position: fixed;
+    align:center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header {
+    background-color: #253d86;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: flex-end;
+}
+
+main {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 80vh;
+    
+}
+
+.pharm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.pharm-content {
+    max-width: 63%;
+    max-height: 40%;
+}
+
+.pharm h1 {
+    font-size: 2.5rem;
+    color: #bc8907;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.pharm p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
+
+.pharm-buttons {
+    display: flex;
+    gap: 70px;
+    text-align: center;
+    display: block;
+    margin: auto;
+   
+}
+
+.btn {
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 4px;
+    border: #fff;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.explore-btn {
+    background-color: #0033cc;
+    margin-left: 30px;
+    margin-right: 20px;
+    
+}
+.explore-btn:hover {
+    background-color: #fff;
+    color: #0033cc;
+}
+
+.login-btn {
+    background-color: #0033cc;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.login-btn:hover {
+    background-color: #fff;
+    color: #0033cc;
+}
+
+
+.menu-btn {
+    background-color: #0033cc;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.menu-btn:hover {
+    background-color: #fff;
+    color: #0033cc;
+}
+
+.pharm-image img {
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .pharm {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pharm-content {
+        max-width: 100%;
+    }
+
+    .pharm-image {
+        margin-top: 20px;
+    }
+}

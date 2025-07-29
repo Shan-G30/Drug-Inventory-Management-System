@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #2d2d2d;
+    color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header .menu-icon {
+    cursor: pointer;
+}
+
+header .signout {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+aside {
+    width: 200px;
+    background-color: #333;
+    height: 100%;
+    padding-top: 1rem;
+    position: fixed;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+aside ul li:hover {
+    background-color: #277cde; 
+    color: #333;
+}
+
+aside ul li.active {
+    background-color: #277cde;
+}
+
+main {
+    flex-grow: 1;
+    margin-left: 200px;
+    padding: 0;
+}
+
+.users-section {
+    height: calc(100vh - 50px); 
+    display: flex;
+    flex-direction: column;
+}
+
+.users-section h1 {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.table-container {
+    border: 1px solid #fff;
+    padding: 1rem;
+    width: 60%;
+    overflow-y: auto; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+}
+
+table th, table td {
+    padding: 0.5rem;
+    border: 1px solid #fff;
+}
+
+table tbody tr:hover {
+    background-color: #277cde; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.user-details {
+    padding: 1rem;
+    background-color: #444;
+    width: 35%;
+    margin-right: 1rem;
+    overflow-y: auto; 
+}
+
+.user-details h2 {
+    margin-bottom: 1rem;
+}
+
+.user-details label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.user-details input, .user-details select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.user-details input:hover, .user-details select:hover {
+    background-color: #277cde; 
+    transition: background-color 0.3s ease; 
+}
+
+.form-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-buttons button {
+    padding: 0.5rem;
+    background-color: #555;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.form-buttons button:hover {
+    background-color: #277cde; 
+}

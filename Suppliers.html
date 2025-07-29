@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Manager-Suppliers</title>
+    <link rel="stylesheet" href="Suppliers.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="menu">
+                <h2>MENU</h2>
+                <a href="http://127.0.0.1:5500/Product.html">Products</a>
+                <a href="/http:/127.0.0.1:5500/Stock.html">Current Stock</a>
+                <a href="http://127.0.0.1:5500/Customers.html">Customers</a>
+                <a href="http://127.0.0.1:5500/Suppliers.html" class="active">Suppliers</a>
+                <a href="http://127.0.0.1:5500/Sales.html">Sales</a>
+                <a href="http://127.0.0.1:5500/Purchase.html">Purchase</a>
+                <a href="http://127.0.0.1:5500/Users.html">Users</a>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h1>SUPPLIERS</h1>
+                <div class="user-info">
+                    <span>User: Dharaniya (ADMINISTRATOR)</span>
+                    <button type="btn">
+                    <a href="/home.html" class="sign-out">Sign out</a></button>
+                </div>
+            </header>
+            <div class="supplier-section">
+                
+                <div class="supplier-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SUPPLIERCODE</th>
+                                <th>FULLNAME</th>
+                                <th>LOCATION</th>
+                                <th>MOBILE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Acmey Inc.</td>
+                                <td>Madurai</td>
+                                <td>1800560001</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Biolin Labs</td>
+                                <td>Chennai</td>
+                                <td>1800560041</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Orchid Healthcare</td>
+                                <td>Kancheepuram</td>
+                                <td>6546521234</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Ceego Labs Pvt. Ltd</td>
+                                <td>Kancheepuram</td>
+                                <td>8555202215</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Donas Drugs and Pharmaceuticals</td>
+                                <td>Chennai</td>
+                                <td>8555203300</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Innovative Healthcare</td>
+                                <td>Vellore</td>
+                                <td>9696969696</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Sri Balaji Surgical</td>
+                                <td>Chennai</td>
+                                <td>9696969696</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>PM Pharma</td>
+                                <td>Coimbatotre</td>
+                                <td>9696969696</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Quantic Bio Pharmaceuticals</td>
+                                <td>Cuddalore</td>
+                                <td>9696969696</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Softgel Healthcare Pvt. Ltd</td>
+                                <td>Chennai</td>
+                                <td>9696969696</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="supplier-form">
+                    <h3>Enter Supplier Details</h3>
+                    <form>
+                        <label for="supplierCode">Supplier Code:</label>
+                        <input type="text" id="supplierCode">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName">
+                        <label for="location">Location:</label>
+                        <input type="text" id="location">
+                        <label for="contact">Contact:</label>
+                        <input type="text" id="contact">
+                        <label for="debitAmount">Debit Amount:</label>
+                        <input type="text" id="debitAmount">
+                        <label for="creditAmount">Credit Amount:</label>
+                        <input type="text" id="creditAmount">
+                        <div class="buttons">
+                            <button type="button">Add</button>
+                            <button type="button">Edit</button>
+                            <button type="button">Delete</button>
+                            <button type="reset">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
